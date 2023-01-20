@@ -47,7 +47,10 @@
 
 <!-- CONTRIBUTORS -->
 ## Contributors
-
+- Matteo Golin
+- Hamnah Qureshi
+- Grant Achuzia
+- Hetarthi Soni
 <!-- LICENSE -->
 ## License
 
