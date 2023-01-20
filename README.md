@@ -8,6 +8,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        
       </ul>
     </li>
     <li>
@@ -30,6 +31,12 @@
 ## About The Project
 
 ### Built With
+<img height="32" width="32" src="media/python.svg"/>
+<img height="32" width="32" src="media/javascript.svg"/>
+<img height="32" width="32" src="media/html5.svg"/>
+<img height="32" width="32" src="media/css3.svg"/>
+<img height="32" width="32" src="media/react.svg"/>
+<img height="32" width="32" src="media/flask.svg"/>
 
 <!-- GETTING STARTED -->
 ## Getting Started
