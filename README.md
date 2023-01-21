@@ -59,6 +59,12 @@ Introducing **Health Helper**, an interactive software you can use to search for
 - Hetarthi Soni: hetarthi.soni@gmail.com
 <!-- LICENSE -->
 ## License
-
+GNU GENERAL PUBLIC LICENSE Version 3 (GPLv3)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments/Citations
+<details>
+    <summary>Citations</summary>
+    <ol>
+        <li>Doctor in front of a hospital. Centers for Disease Control and Prevention. </li>
+    </ol>
+</details>
