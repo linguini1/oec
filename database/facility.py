@@ -62,7 +62,7 @@ def time_from_string(time_str: str) -> dt.time:
 @dataclass
 class Facility:
 
-    """Represents a facility available to a user."""
+    """Represents a facility available to a user. All facilities have ERs."""
 
     instances: ClassVar[list[Self]] = []
 
