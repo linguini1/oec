@@ -27,7 +27,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img height="420" width="540" src="media/hhlogo.png"/> <br>
+<img height="420" width="540" src="frontend\public\images\hhlogo.png"/> <br>
 Introducing **Health Helper**, an interactive software you can use to search for and find medical facilities that meet your specific needs.
 
 ## Built With <br>
