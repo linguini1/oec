@@ -25,6 +25,7 @@ function App() {
         <Route path="/map" element={<Map/>}></Route>
       </Routes>
     </div>
+      
   );
 }
 
