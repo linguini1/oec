@@ -1,0 +1,16 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
