@@ -24,6 +24,7 @@ class UnderlyingCondition(StrEnum):
     HEART_ATTACK: str = "heart attack"
     TRAUMA: str = "trauma"
     ASTHMA: str = "asthma"
+    BLUNT_TRAUMA: str = "blunt trauma"
 
 
 class Symptoms(StrEnum):
@@ -61,6 +62,7 @@ class Patient:
     latitude: float
     longitude: float
     age: int
+    sex: Sex
     underlying: list[UnderlyingCondition] = field(default_factory=list)
     symptoms: list[Symptoms] = field(default_factory=list)
 
@@ -73,6 +75,7 @@ class Patient:
             latitude=json_packet.get("latitude"),
             longitude=json_packet.get("longitude"),
             age=json_packet.get("age"),
+            sex=json_packet.get("sex"),
             underlying=json_packet.get("underlying"),
             symptoms=json_packet.get("symptoms")
         )
