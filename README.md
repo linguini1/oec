@@ -48,7 +48,12 @@ Introducing **Health Helper**, an interactive software you can use to search for
 - Python version 3.11+
 - Flask
 - Flask CORS
-Requirements found in requirements.txt file.
+
+Requirements found in `requirements.txt` file.
+
+A virtual environment has been included with this project. You can activate this by navigating to the project directory
+in the terminal and running `./venv/scripts/activate` on Windows. Once the virtual environment is activated, running
+`py main.py` will activate the webserver. You can follow the link (`http://localhost:8000`) to view the web application.
 
 
 <!-- USAGE EXAMPLES -->
