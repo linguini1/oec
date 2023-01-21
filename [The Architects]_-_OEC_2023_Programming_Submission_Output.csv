@@ -1,0 +1,72 @@
+id,name,type,latitude,longitude,opening,closing,icu,ccu,vascular,trauma,capacity,contact
+31,Brockville General Hospital,hospital,44.597125,-75.681811,00:00:00,23:59:00,False,False,False,False,b,613-345-5649
+32,Cornerstone Family Medical Center,clinic,44.591492,-75.700621,08:30:00,17:00:00,False,False,False,False,n,613-498-0444
+34,The Ottawa Hospital,hospital,45.392674,-75.721418,00:00:00,23:59:00,True,True,True,True,a,613-798-5555
+30,Kingston Health Sciences Centre-General,hospital,44.224283,-76.492881,00:00:00,23:59:00,True,True,True,True,a,613-548-3232
+29,Belleville General Hospital,hospital,44.163279,-77.364711,00:00:00,23:59:00,True,False,False,True,b,613-969-7400
+35,Canada House,clinic,45.828101,-77.097524,08:00:00,16:00:00,False,False,False,False,n,613-687-1010
+28,Lakeridge Health Port Perry,hospital,44.104888,-78.954839,00:00:00,23:59:00,False,False,False,False,c,905-985-7321
+14,Niagara Health System-St Catharines,hospital,43.163142,-79.230931,00:00:00,23:59:00,True,True,True,False,b,905-378-4647
+4,Uxbridge Hospital,hospital,44.10246,-79.12779,00:00:00,23:59:00,False,False,False,False,c,905-852-9771
+27,Scarborough General Hospital,hospital,43.755833,-79.246944,00:00:00,23:59:00,True,True,True,True,b,416-438-2911
+25,Sunnybrook Health Sciences Centre,hospital,43.721696,-79.376026,00:00:00,23:59:00,True,True,True,True,a,416-480-6100
+id,name,type,latitude,longitude,opening,closing,icu,ccu,vascular,trauma,capacity,contact
+31,Brockville General Hospital,hospital,44.597125,-75.681811,00:00:00,23:59:00,False,False,False,False,b,613-345-5649
+32,Cornerstone Family Medical Center,clinic,44.591492,-75.700621,08:30:00,17:00:00,False,False,False,False,n,613-498-0444
+34,The Ottawa Hospital,hospital,45.392674,-75.721418,00:00:00,23:59:00,True,True,True,True,a,613-798-5555
+30,Kingston Health Sciences Centre-General,hospital,44.224283,-76.492881,00:00:00,23:59:00,True,True,True,True,a,613-548-3232
+29,Belleville General Hospital,hospital,44.163279,-77.364711,00:00:00,23:59:00,True,False,False,True,b,613-969-7400
+35,Canada House,clinic,45.828101,-77.097524,08:00:00,16:00:00,False,False,False,False,n,613-687-1010
+28,Lakeridge Health Port Perry,hospital,44.104888,-78.954839,00:00:00,23:59:00,False,False,False,False,c,905-985-7321
+14,Niagara Health System-St Catharines,hospital,43.163142,-79.230931,00:00:00,23:59:00,True,True,True,False,b,905-378-4647
+4,Uxbridge Hospital,hospital,44.10246,-79.12779,00:00:00,23:59:00,False,False,False,False,c,905-852-9771
+27,Scarborough General Hospital,hospital,43.755833,-79.246944,00:00:00,23:59:00,True,True,True,True,b,416-438-2911
+25,Sunnybrook Health Sciences Centre,hospital,43.721696,-79.376026,00:00:00,23:59:00,True,True,True,True,a,416-480-6100
+id,name,type,latitude,longitude,opening,closing,icu,ccu,vascular,trauma,capacity,contact
+31,Brockville General Hospital,hospital,44.597125,-75.681811,00:00:00,23:59:00,False,False,False,False,b,613-345-5649
+32,Cornerstone Family Medical Center,clinic,44.591492,-75.700621,08:30:00,17:00:00,False,False,False,False,n,613-498-0444
+34,The Ottawa Hospital,hospital,45.392674,-75.721418,00:00:00,23:59:00,True,True,True,True,a,613-798-5555
+30,Kingston Health Sciences Centre-General,hospital,44.224283,-76.492881,00:00:00,23:59:00,True,True,True,True,a,613-548-3232
+29,Belleville General Hospital,hospital,44.163279,-77.364711,00:00:00,23:59:00,True,False,False,True,b,613-969-7400
+35,Canada House,clinic,45.828101,-77.097524,08:00:00,16:00:00,False,False,False,False,n,613-687-1010
+28,Lakeridge Health Port Perry,hospital,44.104888,-78.954839,00:00:00,23:59:00,False,False,False,False,c,905-985-7321
+14,Niagara Health System-St Catharines,hospital,43.163142,-79.230931,00:00:00,23:59:00,True,True,True,False,b,905-378-4647
+4,Uxbridge Hospital,hospital,44.10246,-79.12779,00:00:00,23:59:00,False,False,False,False,c,905-852-9771
+27,Scarborough General Hospital,hospital,43.755833,-79.246944,00:00:00,23:59:00,True,True,True,True,b,416-438-2911
+25,Sunnybrook Health Sciences Centre,hospital,43.721696,-79.376026,00:00:00,23:59:00,True,True,True,True,a,416-480-6100
+id,name,type,latitude,longitude,opening,closing,icu,ccu,vascular,trauma,capacity,contact
+31,Brockville General Hospital,hospital,44.597125,-75.681811,00:00:00,23:59:00,False,False,False,False,b,613-345-5649
+32,Cornerstone Family Medical Center,clinic,44.591492,-75.700621,08:30:00,17:00:00,False,False,False,False,n,613-498-0444
+33,Children's Hospital of Eastern Ontario,pediatrics,45.400767,-75.652152,00:00:00,23:59:00,True,True,True,False,a,613-737-7600
+34,The Ottawa Hospital,hospital,45.392674,-75.721418,00:00:00,23:59:00,True,True,True,True,a,613-798-5555
+30,Kingston Health Sciences Centre-General,hospital,44.224283,-76.492881,00:00:00,23:59:00,True,True,True,True,a,613-548-3232
+29,Belleville General Hospital,hospital,44.163279,-77.364711,00:00:00,23:59:00,True,False,False,True,b,613-969-7400
+35,Canada House,clinic,45.828101,-77.097524,08:00:00,16:00:00,False,False,False,False,n,613-687-1010
+28,Lakeridge Health Port Perry,hospital,44.104888,-78.954839,00:00:00,23:59:00,False,False,False,False,c,905-985-7321
+14,Niagara Health System-St Catharines,hospital,43.163142,-79.230931,00:00:00,23:59:00,True,True,True,False,b,905-378-4647
+4,Uxbridge Hospital,hospital,44.10246,-79.12779,00:00:00,23:59:00,False,False,False,False,c,905-852-9771
+27,Scarborough General Hospital,hospital,43.755833,-79.246944,00:00:00,23:59:00,True,True,True,True,b,416-438-2911
+id,name,type,latitude,longitude,opening,closing,icu,ccu,vascular,trauma,capacity,contact
+31,Brockville General Hospital,hospital,44.597125,-75.681811,00:00:00,23:59:00,False,False,False,False,b,613-345-5649
+32,Cornerstone Family Medical Center,clinic,44.591492,-75.700621,08:30:00,17:00:00,False,False,False,False,n,613-498-0444
+34,The Ottawa Hospital,hospital,45.392674,-75.721418,00:00:00,23:59:00,True,True,True,True,a,613-798-5555
+30,Kingston Health Sciences Centre-General,hospital,44.224283,-76.492881,00:00:00,23:59:00,True,True,True,True,a,613-548-3232
+29,Belleville General Hospital,hospital,44.163279,-77.364711,00:00:00,23:59:00,True,False,False,True,b,613-969-7400
+35,Canada House,clinic,45.828101,-77.097524,08:00:00,16:00:00,False,False,False,False,n,613-687-1010
+28,Lakeridge Health Port Perry,hospital,44.104888,-78.954839,00:00:00,23:59:00,False,False,False,False,c,905-985-7321
+14,Niagara Health System-St Catharines,hospital,43.163142,-79.230931,00:00:00,23:59:00,True,True,True,False,b,905-378-4647
+4,Uxbridge Hospital,hospital,44.10246,-79.12779,00:00:00,23:59:00,False,False,False,False,c,905-852-9771
+27,Scarborough General Hospital,hospital,43.755833,-79.246944,00:00:00,23:59:00,True,True,True,True,b,416-438-2911
+25,Sunnybrook Health Sciences Centre,hospital,43.721696,-79.376026,00:00:00,23:59:00,True,True,True,True,a,416-480-6100
+id,name,type,latitude,longitude,opening,closing,icu,ccu,vascular,trauma,capacity,contact
+31,Brockville General Hospital,hospital,44.597125,-75.681811,00:00:00,23:59:00,False,False,False,False,b,613-345-5649
+32,Cornerstone Family Medical Center,clinic,44.591492,-75.700621,08:30:00,17:00:00,False,False,False,False,n,613-498-0444
+33,Children's Hospital of Eastern Ontario,pediatrics,45.400767,-75.652152,00:00:00,23:59:00,True,True,True,False,a,613-737-7600
+34,The Ottawa Hospital,hospital,45.392674,-75.721418,00:00:00,23:59:00,True,True,True,True,a,613-798-5555
+30,Kingston Health Sciences Centre-General,hospital,44.224283,-76.492881,00:00:00,23:59:00,True,True,True,True,a,613-548-3232
+29,Belleville General Hospital,hospital,44.163279,-77.364711,00:00:00,23:59:00,True,False,False,True,b,613-969-7400
+35,Canada House,clinic,45.828101,-77.097524,08:00:00,16:00:00,False,False,False,False,n,613-687-1010
+28,Lakeridge Health Port Perry,hospital,44.104888,-78.954839,00:00:00,23:59:00,False,False,False,False,c,905-985-7321
+14,Niagara Health System-St Catharines,hospital,43.163142,-79.230931,00:00:00,23:59:00,True,True,True,False,b,905-378-4647
+4,Uxbridge Hospital,hospital,44.10246,-79.12779,00:00:00,23:59:00,False,False,False,False,c,905-852-9771
+27,Scarborough General Hospital,hospital,43.755833,-79.246944,00:00:00,23:59:00,True,True,True,True,b,416-438-2911

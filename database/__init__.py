@@ -8,7 +8,7 @@ from .facility import Facility
 
 # Constants
 FACILITY_DB: str = "facilities.csv"
-RANKING_LIST: str = "rankings.csv"
+RANKING_LIST: str = "[The Architects]_-_OEC_2023_Programming_Submission_Output.csv"
 
 
 # Helper functions
@@ -35,7 +35,7 @@ def export_rankings_to_csv(rankings: list[Facility], filepath: str = f"{os.getcw
 
     headers = dict(rankings[0]).keys()  # Get headers
 
-    with open(filepath, 'a') as file:
+    with open(filepath, 'a', newline="", encoding="utf-8") as file:
 
         writer = csv.writer(file)
         writer.writerow(headers)  # Write headers

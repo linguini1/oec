@@ -60,14 +60,17 @@ def rank(patient: Patient) -> list[Facility]:
 
     # Calculate preconditions
     valid_types = list(FacilityType)
-    remove_invalid_types_for_patient_age(patient, valid_types)
+    try:
+        remove_invalid_types_for_patient_age(patient, valid_types)
+    except ValueError:
+        pass
 
     facility_options = []
     # Look through facilities
     for facility in Facility.instances:
 
         # Must match the patient needs
-        if facility.type_ in valid_types:
+        if facility.type_.value in valid_types:
 
             # Calculate distance
             facility_options.append(
@@ -76,5 +79,7 @@ def rank(patient: Patient) -> list[Facility]:
                     distance_from_lat_lon_km(facility.latitude, facility.longitude, patient.latitude, patient.longitude)
                 )
             )
+
+    print(facility_options)
 
     return [fac for fac, dist in sorted(facility_options, key=lambda x: x[1])]
