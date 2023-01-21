@@ -14,6 +14,7 @@ export default function Form() {
   const[longitude, setLongitude] = useState();
 
   //Gecode 
+  Geocode.setApiKey("https://maps.googleapis.com/maps/api/geocode/xml?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA");
   Geocode.setLanguage("en");
   Geocode.setRegion("ca");
   Geocode.setLocationType("ROOFTOP");

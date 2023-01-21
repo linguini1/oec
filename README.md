@@ -55,6 +55,8 @@ A virtual environment has been included with this project. You can activate this
 in the terminal and running `./venv/scripts/activate` on Windows. Once the virtual environment is activated, running
 `py main.py` will activate the webserver. You can follow the link (`http://localhost:8000`) to view the web application.
 
+Test cases can be run using `py test_cases.py`.
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
