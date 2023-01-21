@@ -68,7 +68,7 @@ class Facility:
 
     id_: int
     name: str
-    type_: list[FacilityType]
+    type_: FacilityType
     latitude: float
     longitude: float
     opening: dt.time
@@ -93,7 +93,7 @@ class Facility:
         return cls(
             id_=int(csv_row[0]),
             name=csv_row[1],
-            type_=parse_facility_type(csv_row[2]),
+            type_=parse_facility_type(csv_row[2])[0],
             latitude=float(csv_row[3]),
             longitude=float(csv_row[4]),
             opening=time_from_string(csv_row[5]),
