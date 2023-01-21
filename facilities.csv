@@ -10,7 +10,7 @@ seq,facilityname,type,latitude,longitude,opening,closing,icu,ccu,vc,tc,capacity,
 9,West Haldimand General Hospital,Hospital,42.95846,-80.04432,0:00,23:59,no,no,no,no,c,905-768-3311
 10,Hamilton General Hospital,"Hospital, Pharmacy",43.261944,-79.854722,0:00,23:59,yes,yes,yes,yes,a,905-521-2100
 11,McMaster Children's Hospital,"Pediatrics, Pharmacy",43.25936,-79.91742,0:00,23:59,yes,no,no,yes,a,905-521-2100
-12,West End Clinic,Clinic,43.260388,-79.898124,12:00,7:00,no,no,ni,no,n,905-521-2100
+12,West End Clinic,Clinic,43.260388,-79.898124,12:00,7:00,no,no,no,no,n,905-521-2100
 13,Joseph Brant Hospital,Hospital,43.316912,-79.802208,0:00,23:59,yes,no,no,no,b,905-632-3737
 14,Niagara Health System-St Catharines,"Hospital, Pharmacy",43.163142,-79.230931,0:00,23:59,yes,yes,yes,no,b,905-378-4647
 15,London Health Science Centre-Western,"Hospital, Pharmacy",43.0125,-81.275,0:00,23:59,yes,yes,yes,yes,a,519-685-8500

@@ -4,7 +4,7 @@ __author__ = "Matteo Golin"
 # Imports
 import csv
 import os
-from facility import Facility
+from .facility import Facility
 
 # Constants
 FACILITY_DB: str = "facilities.csv"
@@ -19,5 +19,7 @@ def load_facilities(filepath: str = f"{os.getcwd()}/{FACILITY_DB}") -> list[Faci
         reader = csv.reader(file)
         headers = next(reader)  # Unpack headers
 
-        for line in reader:
-            
+        for row in reader:
+            facility = Facility.from_csv_row(row)
+
+    return Facility.instances
