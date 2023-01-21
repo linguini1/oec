@@ -57,4 +57,4 @@ def submit_patient():
     patient = Patient.from_json(request.json())
     rankings = rank(patient)[:11]
     export_rankings_to_csv(rankings)
-    return rankings
+    return [dict(facil) for facil in rankings]
