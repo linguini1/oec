@@ -3,16 +3,9 @@ __author__ = "Matteo Golin"
 
 # Imports
 from database import load_facilities
-from flask import Flask
+from routes import app
 
 # Constants
-
-
-# App creation
-app = Flask(__name__)
-
-
-# API routes
 
 
 if __name__ == '__main__':
