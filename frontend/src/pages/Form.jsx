@@ -1,7 +1,6 @@
 import React from "react";
 import "./Form.css";
 import { useEffect, useState } from "react";
-import Geocode from "react-geocode";
 
 
 export default function Form() {
@@ -14,31 +13,12 @@ export default function Form() {
   const[longitude, setLongitude] = useState();
 
   //Gecode 
-  Geocode.setApiKey("https://maps.googleapis.com/maps/api/geocode/xml?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA");
-  Geocode.setLanguage("en");
-  Geocode.setRegion("ca");
-  Geocode.setLocationType("ROOFTOP");
-  Geocode.enableDebug();
-
-
+  
 
   const handleSubmit = (e) => {
 
     
     e.preventDefault();
-
-    
-    Geocode.fromAddress({location}).then(
-        (response) => {
-          const { lat, lng } = response.results[0].geometry.location;
-          setLatitude(lat);
-          setLongitude(lng);
-          console.log(lat, lng);
-        },
-        (error) => {
-          console.error(error);
-        }
-    );
     
     fetch('http://localhost:8000/api', {
       method: 'POST', 
