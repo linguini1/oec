@@ -75,9 +75,6 @@ MIT License
 <details>
     <summary>Citations</summary>
     <ol>
-        <li>Doctor in front of a hospital. Centers for Disease Control and Prevention. </li>
-    </ol>
-    <ol>
         <li>Latitude Distance Formula: https://www.omnicalculator.com/other/latitude-longitude-distance#:~:text=The%20distance%20between%20any%20two%20adjacent%20latitudes%20is%20approximately%2069,and%20meet%20at%20the%20poles</li>
     </ol>
 </details>
