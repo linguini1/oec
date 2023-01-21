@@ -5,6 +5,7 @@ __author__ = "Matteo Golin"
 from flask import Flask, render_template, request
 from flask_cors import CORS
 from database.patient import UnderlyingCondition, Symptoms, Sex, Patient
+from database.ranking import rank
 
 # Constants
 STATIC_FOLDER: str = ".\\frontend\\build\\static"
@@ -53,4 +54,4 @@ def submit_patient():
     """Submits the patient data for the search to be performed."""
 
     patient = Patient.from_json(request.json())
-    return []  # TODO return the ranked facilities
+    return rank(patient)[:11]

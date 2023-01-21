@@ -55,15 +55,6 @@ def remove_invalid_types_for_patient_symptoms(patient: Patient, valid: list[str]
     pass
 
 
-def score_facility(facility: Facility, patient: Patient, valid_types: list[str]) -> Optional[dict[str, int]]:
-
-    """Scores the facility based on how well it matches the user."""
-
-    # Must match the patient needs
-    if facility.type_ not in valid_types:
-        return
-
-
 def rank(patient: Patient) -> list[Facility]:
 
     """Ranks the facilities based on how well they match the patient's needs."""
@@ -71,3 +62,20 @@ def rank(patient: Patient) -> list[Facility]:
     # Calculate preconditions
     valid_types = list(FacilityType)
     remove_invalid_types_for_patient_age(patient, valid_types)
+
+    facility_options = []
+    # Look through facilities
+    for facility in Facility.instances:
+
+        # Must match the patient needs
+        if facility.type_ in valid_types:
+
+            # Calculate distance
+            facility_options.append(
+                (
+                    facility,
+                    distance_from_lat_lon_km(facility.latitude, facility.longitude, patient.latitude, patient.longitude)
+                )
+            )
+
+    return [fac for fac, dist in sorted(facility_options, key=lambda x: x[1])]
