@@ -2,11 +2,10 @@
 __author__ = "Matteo Golin"
 
 # Imports
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import StrEnum
-import time
 import datetime as dt
-from typing import Self, ClassVar
+from typing import Self, ClassVar, Any
 
 # Constants
 STR_TO_BOOL = {
@@ -63,7 +62,7 @@ def time_from_string(time_str: str) -> dt.time:
 @dataclass
 class Facility:
 
-    """Represents a facility available to a user."""
+    """Represents a facility available to a user. All facilities have ERs."""
 
     instances: ClassVar[list[Self]] = []
 
@@ -121,3 +120,9 @@ class Facility:
         yield "trauma", self.trauma
         yield "capacity", self.capacity
         yield "contact", self.contact
+
+    def to_csv_row(self) -> list[Any]:
+
+        """Returns the Facility object as a CSV row."""
+
+        return list(dict(self).values())
