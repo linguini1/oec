@@ -24,7 +24,6 @@ class UnderlyingCondition(StrEnum):
     HEART_ATTACK: str = "heart attack"
     TRAUMA: str = "trauma"
     ASTHMA: str = "asthma"
-    BLUNT_TRAUMA: str = "blunt trauma"
 
 
 class Symptoms(StrEnum):
@@ -41,6 +40,7 @@ class Symptoms(StrEnum):
     SHORTNESS_BREATH: str = "shortness of breath"
     WEIGHT_LOSS: str = "weight loss"
     BROKEN_BONE: str = "broken bone"
+    BLUNT_TRAUMA: str = "blunt trauma"
 
 
 class Sex(StrEnum):

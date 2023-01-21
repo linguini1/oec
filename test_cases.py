@@ -21,9 +21,32 @@ def case_1():
         longitude=0
     )
 
+def case_2():
+
+    patient = Patient(
+        age=24,
+        sex=Sex.FEMALE,
+        underlying=[],
+        symptoms=[Symptoms.BLUNT_TRAUMA],
+        latitude=0,
+        longitude=0
+    )
+
+def case_3():
+
+    patient = Patient(
+        age=24,
+        sex=Sex.FEMALE,
+        underlying=[],
+        symptoms=[Symptoms.BLUNT_TRAUMA],
+        latitude=0,
+        longitude=0
+    )
+
 
 # Main
 def main():
+    load_facilities()
     case_1()
     case_2()
 
