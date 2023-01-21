@@ -3,15 +3,11 @@ __author__ = "Matteo Golin"
 
 # Imports
 from database import load_facilities
+from routes import app
 
 # Constants
 
 
-# Main
-def main():
-    facils = load_facilities()
-    print(facils[0])
-
-
 if __name__ == '__main__':
-    main()
+    facilities = load_facilities()  # Load facilities before api is available
+    app.run(debug=True)  # TODO remove debug for submission
