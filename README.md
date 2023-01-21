@@ -45,7 +45,10 @@ Introducing **Health Helper**, an interactive software you can use to search for
 
 
 ### Installation
-- Python version 3.11
+- Python version 3.11+
+- Flask
+- Flask CORS
+Requirements found in requirements.txt file.
 
 
 <!-- USAGE EXAMPLES -->
@@ -57,14 +60,19 @@ Introducing **Health Helper**, an interactive software you can use to search for
 - Hamnah Qureshi: hamnahq25@gmail.com
 - Grant Achuzia: achuziaduby@gmail.com
 - Hetarthi Soni: hetarthi.soni@gmail.com
+
 <!-- LICENSE -->
 ## License
-GNU GENERAL PUBLIC LICENSE Version 3 (GPLv3)
+MIT License
+
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments/Citations
 <details>
     <summary>Citations</summary>
     <ol>
         <li>Doctor in front of a hospital. Centers for Disease Control and Prevention. </li>
+    </ol>
+    <ol>
+        <li>Latitude Distance Formula: https://www.omnicalculator.com/other/latitude-longitude-distance#:~:text=The%20distance%20between%20any%20two%20adjacent%20latitudes%20is%20approximately%2069,and%20meet%20at%20the%20poles</li>
     </ol>
 </details>
