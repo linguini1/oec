@@ -5,36 +5,33 @@ import Dropdown from 'react-dropdown';
 
 export default function Form(){
 
-    const [sex, setSex] = useState([]);
-    // const [options, setOptions] = useState(null);
+    const [options, setOptions] = useState(null);
+    const [sex, setSex] = useState("");
+
 
     useEffect(() => {
         fetch('http://localhost:8000/api/sex')
         .then(response => response.json())
-        
-        .then( (data) => setSex(data))
-        .then(json => console.log(json))
+        .then( (data) => setOptions(data))
     }, []);
+
+    console.log(options)
+
+
 
      //options = sex.map((sex) => (<div className="">{sex}</div>))
 
-     const handleChange = (event) => {
+    //  const handleSelect = (e) => {
+    //     console.log(e.target.value);
+    //     setOptionValue(e.target.value);
+    //   };
 
-        setSex(event.target.value);
-     
-    };
     return(
         <div className = "form-box">
         <label> Patient's Health Information</label>
         <input placeholder = "Name"/>
         <input placeholder = "Age" type = "number"/>
-        <Dropdown
-        label = "Sex"
-        options = {sex}
-        onChange= {handleChange}
-        value = {sex[0]}
 
-        />
     
     
         </div>
