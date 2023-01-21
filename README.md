@@ -27,7 +27,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img height="420" width="540" src="media/hhlogo.png"/> <br>
+<img height="320" width="320" src="frontend\public\images\hhlogo.png"/> <br>
 Introducing **Health Helper**, an interactive software you can use to search for and find medical facilities that meet your specific needs.
 
 ## Built With <br>
@@ -45,7 +45,15 @@ Introducing **Health Helper**, an interactive software you can use to search for
 
 
 ### Installation
-- Python version 3.11
+- Python version 3.11+
+- Flask
+- Flask CORS
+
+Requirements found in `requirements.txt` file.
+
+A virtual environment has been included with this project. You can activate this by navigating to the project directory
+in the terminal and running `./venv/scripts/activate` on Windows. Once the virtual environment is activated, running
+`py main.py` will activate the webserver. You can follow the link (`http://localhost:8000`) to view the web application.
 
 
 <!-- USAGE EXAMPLES -->
@@ -57,14 +65,16 @@ Introducing **Health Helper**, an interactive software you can use to search for
 - Hamnah Qureshi: hamnahq25@gmail.com
 - Grant Achuzia: achuziaduby@gmail.com
 - Hetarthi Soni: hetarthi.soni@gmail.com
+
 <!-- LICENSE -->
 ## License
-GNU GENERAL PUBLIC LICENSE Version 3 (GPLv3)
+MIT License
+
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments/Citations
 <details>
     <summary>Citations</summary>
     <ol>
-        <li>Doctor in front of a hospital. Centers for Disease Control and Prevention. </li>
+        <li>Latitude Distance Formula: https://www.omnicalculator.com/other/latitude-longitude-distance#:~:text=The%20distance%20between%20any%20two%20adjacent%20latitudes%20is%20approximately%2069,and%20meet%20at%20the%20poles</li>
     </ol>
 </details>

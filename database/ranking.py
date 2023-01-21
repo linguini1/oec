@@ -3,7 +3,6 @@ __author__ = "Matteo Golin"
 
 # Imports
 from math import sin, cos, radians, asin, sqrt
-from typing import Optional
 from database.facility import Facility, FacilityType
 from database.patient import Patient
 
