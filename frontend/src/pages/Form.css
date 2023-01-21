@@ -1,0 +1,25 @@
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h2 {
+  text-transform: capitalize;
+}
+
+.patient-field {
+  border-radius: 4rem;
+  border-color: black;
+  border-width: 1px;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: black;
+}

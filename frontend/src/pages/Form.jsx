@@ -1,38 +1,47 @@
 import React from "react";
 import "./Form.css";
 import { useEffect, useState } from "react";
-import Dropdown from 'react-dropdown';
+import Dropdown from "react-dropdown";
 
-export default function Form(){
+export default function Form() {
+  const [sex, setSex] = useState([]);
+  const [symptoms, setSymptoms] = useState([]);
+  const [underlying, setUnderlying] = useState([]);
 
-    const [sex, setSex] = useState([]);
-    // const [options, setOptions] = useState(null);
+  useEffect(() => {
+    fetch("http://localhost:8000/api/sex")
+      .then((response) => response.json())
 
-    useEffect(() => {
-        fetch('http://localhost:8000/api/sex')
-        .then(response => response.json())
-        
-        .then( (data) => setSex(data))
-        .then(json => console.log(json))
-    }, []);
+      .then((data) => setSex(data))
+      .then((json) => console.log(json));
+  }, []);
 
-     //options = sex.map((sex) => (<div className="">{sex}</div>))
+  useEffect(() => {
+    fetch("http://localhost:8000/api/symptoms")
+      .then((response) => response.json())
 
-     const handleChange = (event) => {
+      .then((data) => setSymptoms(data))
+      .then((json) => console.log(json));
+  }, []);
 
-        setSex(event.target.value);
-     
-    };
-    return(
-        <div className = "form-box">
-        <label> Patient's Health Information</label>
-        <input placeholder = "Name"/>
-        <input placeholder = "Age" type = "number"/>
-    
-    
-        </div>
+  useEffect(() => {
+    fetch("http://localhost:8000/api/underlying")
+      .then((response) => response.json())
 
-    );
+      .then((data) => setUnderlying(data))
+      .then((json) => console.log(json));
+  }, []);
 
-    
+  const handleChange = (event) => {
+    setSex(event.target.value);
+  };
+  return (
+    <div className="form">
+      <h2>Patient Information</h2>
+      <div className="form-fields">
+        <input className="patient-field" placeholder="Name" />
+        <input className="patient-field" placeholder="Age" type="number" />
+      </div>
+    </div>
+  );
 }
