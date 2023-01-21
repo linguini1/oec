@@ -1,8 +1,6 @@
- #App {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
-    
-  }
-  
+#App {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
