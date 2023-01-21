@@ -8,7 +8,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        
+      </ul>  
       </ul>
     </li>
     <li>
@@ -29,7 +29,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+Introducing Health Helper, an interactive software you can use to search for and find medical facilities that meet your specific needs.
 ### Built With
 <img height="32" width="32" src="media/python.svg"/>
 <img height="32" width="32" src="media/javascript.svg"/>
