@@ -4,20 +4,19 @@ nav {
   justify-content: space-between;
   height: 5rem;
   color: white;
-  padding: 1rem;
-  font-size: 1.2rem;
+  padding: 4rem;
+  font-size: 1.9rem;
 }
 
 .header--image {
-  height: 10rem;
-  width: 10rem;
+  height: 15rem;
+  width: 15rem;
   margin-right: 6px;
 }
 
 #nav-links {
   display: flex;
-  gap: 0.8rem;
-  
+  gap: 3.8rem;
 }
 
 #logo {
