@@ -1,7 +1,7 @@
 import React from "react";
 import "./Form.css";
 import { useEffect, useState } from "react";
-import Dropdown from "react-dropdown";
+import Select from "react-select";
 
 export default function Form() {
   const [sex, setSex] = useState([]);
@@ -12,7 +12,9 @@ export default function Form() {
     fetch("http://localhost:8000/api/sex")
       .then((response) => response.json())
 
-      .then((data) => setSex(data))
+      .then((data) => {
+        setSex(data);
+      })
       .then((json) => console.log(json));
   }, []);
 
@@ -32,15 +34,20 @@ export default function Form() {
       .then((json) => console.log(json));
   }, []);
 
-  const handleChange = (event) => {
-    setSex(event.target.value);
-  };
+  console.log(sex);
+  const sex_options = sex.map((elem) => {
+    <option value={elem}>{elem}</option>;
+  });
+
   return (
     <div className="form">
       <h2>Patient Information</h2>
       <div className="form-fields">
         <input className="patient-field" placeholder="Name" />
         <input className="patient-field" placeholder="Age" type="number" />
+        <select name="sex" id="sex">
+          {sex_options}
+        </select>
       </div>
     </div>
   );
