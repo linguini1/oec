@@ -55,7 +55,7 @@
 <!-- CONTRIBUTORS -->
 ## Contributors and Their Emails
 - Matteo Golin: matteo.golin@gmail.com
-- Hamnah Qureshi: hamnahQ25@gmail.com
+- Hamnah Qureshi: hamnahq25@gmail.com
 - Grant Achuzia: achuziaduby@gmail.com
 - Hetarthi Soni: hetarthi.soni@gmail.com
 <!-- LICENSE -->
