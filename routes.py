@@ -3,6 +3,7 @@ __author__ = "Matteo Golin"
 
 # Imports
 from flask import Flask, render_template, request
+from flask_cors import CORS
 from database.patient import UnderlyingCondition, Symptoms, Sex, Patient
 
 # Constants
@@ -12,7 +13,9 @@ API_ROUTE: str = "/api"
 
 # Flask application
 app = Flask(__name__, static_folder=STATIC_FOLDER, template_folder=TEMPLATE_FOLDER)
+cors = CORS(app)
 app.config['SERVER_NAME'] = 'localhost:8000'
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 # Webpage route

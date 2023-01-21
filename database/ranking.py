@@ -3,6 +3,7 @@ __author__ = "Matteo Golin"
 
 # Imports
 from math import sin, cos, radians, asin, sqrt
+from typing import Optional
 from database.facility import Facility
 from database.patient import Patient
 
@@ -30,5 +31,12 @@ def distance_from_lat_lon_km(lat1: float, long1: float, lat2: float, long2: floa
 
     return 2 * EARTH_RADIUS_KM * asin(square_root)
 
+
+
+
+
+def score_facility(facility: Facility, patient: Patient) -> Optional[dict[str, int]]:
+
+    """Scores the facility based on how well it matches the user."""
 
 
