@@ -21,7 +21,7 @@
     <li><a href="#contributors">Contributors</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#acknowledgments">Acknowledgments/Citations</a></li>
   </ol>
 </details>
 
@@ -59,6 +59,12 @@ Introducing **Health Helper**, an interactive software you can use to search for
 - Hetarthi Soni: hetarthi.soni@gmail.com
 <!-- LICENSE -->
 ## License
-
+GNU GENERAL PUBLIC LICENSE Version 3 (GPLv3)
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Acknowledgments/Citations
+<details>
+    <summary>Citations</summary>
+    <ol>
+        <li>Doctor in front of a hospital. Centers for Disease Control and Prevention. </li>
+    </ol>
+</details>
