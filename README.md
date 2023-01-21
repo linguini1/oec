@@ -53,11 +53,11 @@ Introducing Health Helper, an interactive software you can use to search for and
 ## Roadmap
 
 <!-- CONTRIBUTORS -->
-## Contributors
-- Matteo Golin
-- Hamnah Qureshi
-- Grant Achuzia
-- Hetarthi Soni
+## Contributors and Their Emails
+- Matteo Golin: matteo.golin@gmail.com
+- Hamnah Qureshi: hamnahq25@gmail.com
+- Grant Achuzia: achuziaduby@gmail.com
+- Hetarthi Soni: hetarthi.soni@gmail.com
 <!-- LICENSE -->
 ## License
 
