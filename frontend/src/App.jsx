@@ -11,6 +11,7 @@ import PageLink from "./components/nav/PageLink";
 import Navbar from "./components/nav/Navbar";
 
 function App() {
+
   return (
     <div id="App">
       <Navbar>
@@ -19,9 +20,9 @@ function App() {
         <PageLink to="/map">Map</PageLink>
       </Navbar>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/form" element={<Form />}></Route>
-        <Route path="/map" element={<Map />}></Route>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/form" element={<Form/>}></Route>
+        <Route path="/map" element={<Map/>}></Route>
       </Routes>
     </div>
   );
