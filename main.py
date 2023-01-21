@@ -10,4 +10,4 @@ from routes import app
 
 if __name__ == '__main__':
     facilities = load_facilities()  # Load facilities before api is available
-    app.run(debug=True)  # TODO remove debug for submission
+    app.run(debug=True, port=8000)  # TODO remove debug for submission

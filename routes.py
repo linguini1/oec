@@ -3,7 +3,7 @@ __author__ = "Matteo Golin"
 
 # Imports
 from flask import Flask, render_template, request
-from database.user import UnderlyingCondition, Symptoms, Sex, Patient
+from database.patient import UnderlyingCondition, Symptoms, Sex, Patient
 
 # Constants
 STATIC_FOLDER: str = ".\\frontend\\build\\static"
@@ -12,10 +12,11 @@ API_ROUTE: str = "/api"
 
 # Flask application
 app = Flask(__name__, static_folder=STATIC_FOLDER, template_folder=TEMPLATE_FOLDER)
+app.config['SERVER_NAME'] = 'localhost:8000'
 
 
 # Webpage route
-@app.route("/", methods=["GETS"])
+@app.route("/", methods=["GET"])
 def index():
     """The homepage of the website where HTML will be served. React Router handles URLS beyond this."""
 
