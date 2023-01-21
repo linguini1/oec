@@ -1,42 +1,54 @@
 import React from "react";
 import "./Form.css";
 import { useEffect, useState } from "react";
-import Dropdown from 'react-dropdown';
+import Select from "react-select";
 
-export default function Form(){
+export default function Form() {
+  const [sex, setSex] = useState([]);
+  const [symptoms, setSymptoms] = useState([]);
+  const [underlying, setUnderlying] = useState([]);
 
-    const [options, setOptions] = useState(null);
-    const [sex, setSex] = useState("");
+  useEffect(() => {
+    fetch("http://localhost:8000/api/sex")
+      .then((response) => response.json())
 
+      .then((data) => {
+        setSex(data);
+      })
+      .then((json) => console.log(json));
+  }, []);
 
-    useEffect(() => {
-        fetch('http://localhost:8000/api/sex')
-        .then(response => response.json())
-        .then( (data) => setOptions(data))
-    }, []);
+  useEffect(() => {
+    fetch("http://localhost:8000/api/symptoms")
+      .then((response) => response.json())
 
-    console.log(options)
+      .then((data) => setSymptoms(data))
+      .then((json) => console.log(json));
+  }, []);
 
+  useEffect(() => {
+    fetch("http://localhost:8000/api/underlying")
+      .then((response) => response.json())
 
+      .then((data) => setUnderlying(data))
+      .then((json) => console.log(json));
+  }, []);
 
-     //options = sex.map((sex) => (<div className="">{sex}</div>))
+  console.log(sex);
+  const sex_options = sex.map((elem) => {
+    <option value={elem}>{elem}</option>;
+  });
 
-    //  const handleSelect = (e) => {
-    //     console.log(e.target.value);
-    //     setOptionValue(e.target.value);
-    //   };
-
-    return(
-        <div className = "form-box">
-        <label> Patient's Health Information</label>
-        <input placeholder = "Name"/>
-        <input placeholder = "Age" type = "number"/>
-
-    
-    
-        </div>
-
-    );
-
-    
+  return (
+    <div className="form">
+      <h2>Patient Information</h2>
+      <div className="form-fields">
+        <input className="patient-field" placeholder="Name" />
+        <input className="patient-field" placeholder="Age" type="number" />
+        <select name="sex" id="sex">
+          {sex_options}
+        </select>
+      </div>
+    </div>
+  );
 }

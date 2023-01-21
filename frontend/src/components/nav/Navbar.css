@@ -1,19 +1,30 @@
-.header {
+nav {
   display: flex;
   align-items: center;
-  height: 80px;
-  color: white;
-  padding: 20px;
+  justify-content: space-between;
+  height: 5rem;
+  color: #d9d9d9;
+  padding: 4rem;
+  font-size: 1.9rem;
 }
 
 .header--image {
-  height: 70px;
+  height: 19rem;
+  width: 19rem;
   margin-right: 6px;
 }
 
 #nav-links {
   display: flex;
-  gap: 0.5rem;
+  gap: 3.8rem;
+}
+
+.nav-link:hover {
+  color: #ff5757;
+}
+
+.nav-link:link {
+  text-decoration: none;
 }
 
 #logo {
