@@ -14,3 +14,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
