@@ -39,6 +39,7 @@ class Symptoms(StrEnum):
     NOSE_BLEED: str = "nose bleed"
     SHORTNESS_BREATH: str = "shortness of breath"
     WEIGHT_LOSS: str = "weight loss"
+    BROKEN_BONE: str = "broken bone"
 
 
 class Sex(StrEnum):
