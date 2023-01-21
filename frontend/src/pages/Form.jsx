@@ -28,13 +28,6 @@ export default function Form(){
         <label> Patient's Health Information</label>
         <input placeholder = "Name"/>
         <input placeholder = "Age" type = "number"/>
-        <Dropdown
-        label = "Sex"
-        options = {sex}
-        onChange= {handleChange}
-        value = {sex[0]}
-
-        />
     
     
         </div>
