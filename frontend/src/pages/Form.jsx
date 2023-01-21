@@ -1,54 +1,80 @@
 import React from "react";
 import "./Form.css";
 import { useEffect, useState } from "react";
-import Select from "react-select";
+import Geocode from "react-geocode";
+
 
 export default function Form() {
-  const [sex, setSex] = useState([]);
-  const [symptoms, setSymptoms] = useState([]);
-  const [underlying, setUnderlying] = useState([]);
+  const [age, setAge] = useState();
+  const [sex, setSex] = useState();
+  const [symptoms, setSymptoms] = useState();
+  const [underlying, setUnderlying] = useState();
+  const [location, setLocation] = useState();
+  const [latitude, setLatitude] = useState();
+  const[longitude, setLongitude] = useState();
 
-  useEffect(() => {
-    fetch("http://localhost:8000/api/sex")
-      .then((response) => response.json())
+  //Gecode 
+  Geocode.setLanguage("en");
+  Geocode.setRegion("ca");
+  Geocode.setLocationType("ROOFTOP");
+  Geocode.enableDebug();
 
-      .then((data) => {
-        setSex(data);
+
+
+  const handleSubmit = (e) => {
+
+    
+    e.preventDefault();
+
+    
+    Geocode.fromAddress({location}).then(
+        (response) => {
+          const { lat, lng } = response.results[0].geometry.location;
+          setLatitude(lat);
+          setLongitude(lng);
+          console.log(lat, lng);
+        },
+        (error) => {
+          console.error(error);
+        }
+    );
+    
+    fetch('http://localhost:8000/api', {
+      method: 'POST', 
+      mode: 'cors', 
+      body: JSON.stringify({
+        age:age,
+        sex: sex,
+        underlying: underlying,
+        symptoms: symptoms, 
+        latitude: latitude,
+        longitude: longitude
       })
-      .then((json) => console.log(json));
-  }, []);
 
-  useEffect(() => {
-    fetch("http://localhost:8000/api/symptoms")
-      .then((response) => response.json())
+    })
 
-      .then((data) => setSymptoms(data))
-      .then((json) => console.log(json));
-  }, []);
+}
 
-  useEffect(() => {
-    fetch("http://localhost:8000/api/underlying")
-      .then((response) => response.json())
-
-      .then((data) => setUnderlying(data))
-      .then((json) => console.log(json));
-  }, []);
-
-  console.log(sex);
-  const sex_options = sex.map((elem) => {
-    <option value={elem}>{elem}</option>;
-  });
 
   return (
-    <div className="form">
+    <form className="form" onSubmit={handleSubmit}>
       <h2>Patient Information</h2>
       <div className="form-fields">
-        <input className="patient-field" placeholder="Name" />
-        <input className="patient-field" placeholder="Age" type="number" />
-        <select name="sex" id="sex">
-          {sex_options}
-        </select>
+        <input className="patient-field" placeholder="Name" type="text" 
+        />
+        <input className="patient-field" placeholder="Age" type="number" min="1" max="130"
+        onChange={(e) => setAge(e.target.value)} />
+        <input className = "patient-field" placeholder = "Sex" type="text"
+        onChange={(e) => setSex(e.target.value)}/>
+        <input className="patient-field" placeholder="Underlying Conditions" type= "text"
+        onChange={(e) => setUnderlying(e.target.value)}/>
+        <input className="patient-field" placeholder="Symptoms" type= "text"
+        onChange={(e) => setSymptoms(e.target.value)}/>
+        <input className="patient-field" placeholder="Location " type= "text"
+        onChange={(e) => setLocation(e.target.value)}/>
+        <button className = "form-button"type="submit">Submit Form</button>
+
       </div>
-    </div>
+    </form>
   );
 }
