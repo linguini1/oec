@@ -8,6 +8,7 @@ from .facility import Facility
 
 # Constants
 FACILITY_DB: str = "facilities.csv"
+RANKING_LIST: str = "rankings.csv"
 
 
 # Helper functions
@@ -23,3 +24,11 @@ def load_facilities(filepath: str = f"{os.getcwd()}/{FACILITY_DB}") -> list[Faci
             facility = Facility.from_csv_row(row)
 
     return Facility.instances
+
+
+def export_rankings_to_csv(rankings: list[Facility], filepath: str = f"{os.getcwd()}/{RANKING_LIST}") -> None:
+
+    """Save the facility ranking list for a query to a CSV file given by the filepath."""
+
+    pass
+

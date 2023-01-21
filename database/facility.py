@@ -2,7 +2,7 @@
 __author__ = "Matteo Golin"
 
 # Imports
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import StrEnum
 import time
 import datetime as dt
